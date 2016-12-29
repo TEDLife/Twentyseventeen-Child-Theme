@@ -12,10 +12,16 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
 /* Place all your CSS modifications below */
 @import url("../twentyseventeen/style.css");
 
+/* Global */
 .site-content-contain{
   background-color: #f8f8f8;
 }
 
+.site-footer{
+  background-color: #ffffff;
+}
+
+/* Design items */
 .design-item{
   background-color: #ffffff;
   position: relative;
