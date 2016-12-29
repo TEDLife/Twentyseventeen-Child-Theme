@@ -41,13 +41,13 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
   text-align: center;
 }
 .likebutton a{
-  color: #757575;
+  color: #999999;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1;
 }
 .likebutton a:hover{
-  color: #2c2f33;
+  color: #333333;
 }
 .likebutton svg{
   font-size: 20px;
@@ -58,9 +58,40 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
   top: 5px;
   left: 5px;
 }
+
+.design-item .img{
+  position: relative;
+  overflow: hidden;
+}
+
+.design-item .img::before {
+    content: "";
+    transition-delay: 175ms;
+    transition: all 325ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    background: linear-gradient(to right, #4778f6, #02d9b6);
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.design-item-container:hover .img::before {
+  transition-delay: 0ms;
+  opacity: .7;
+}
+
 .design-item .img img{
-  max-width: 100%;
-  height: auto;
+    transition: all 275ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    backface-visibility: hidden;
+    display: block;
+    width: 100%;
+}
+
+.design-item-container:hover .img img{
+  transform: scale(1.075);
 }
 
 .design-item .title{
@@ -77,6 +108,11 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
   font-size: 1.25rem;
   margin-bottom: 5px;
   margin-bottom: 0.3125rem;
+  color: #666666;
+}
+
+.design-item-container:hover .title{
+  color: #333333;
 }
 
 .design-item .des{
@@ -85,7 +121,11 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
 }
 
 .design-item .cat{
-  color: #757575;
+  color: #999999;
+}
+
+.design-item-container:hover .cat{
+  color: #666666;
 }
 
 @media screen and (min-width: 48em) {
