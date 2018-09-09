@@ -35,10 +35,10 @@
 		</div>
 	</a>
 
-	<div class="likebutton">
-
-		<a href="#login">0<br><?php echo twentyseventeen_get_svg( array( 'icon' => 'guanzhu' ) ); ?></a>
-
-	</div>
+	<a href="#" class="likebutton" data-post-id="<?php echo get_the_ID(); ?>">
+		<span id="vote-count-<?php echo get_the_ID(); ?>"><?php echo intval( get_post_meta( get_the_ID(), 'votes', true ) ) ?></span>
+		<br>
+		<?php echo twentyseventeen_get_svg( array( 'icon' => 'guanzhu' ) ); ?>
+	</a>
 
 </article><!-- .design-item -->

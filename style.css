@@ -37,17 +37,20 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
   bottom: 1.25rem;
   right: 20px;
   right: 1.25rem;
-  z-index: 1;
-  text-align: center;
-}
-.likebutton a{
-  color: #999999;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1;
+  color: #999;
+  z-index: 1;
+  text-align: center;
 }
-.likebutton a:hover{
-  color: #333333;
+a.likebutton span {
+  display: block;
+  width: 100%;
+  color: #999;
+}
+a.likebutton:hover span{
+  color: #333;
 }
 .likebutton svg{
   font-size: 20px;
