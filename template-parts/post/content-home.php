@@ -28,7 +28,7 @@
 		</div>
 		<div class="des">
 
-			<h1 class="title"><?php the_title(); ?></h1>
+			<h2 class="title"><?php the_title(); ?></h2>
 			<?php $category = get_the_category(); ?>
 			<span class="cat"><?php echo $category[0]->cat_name; ?></span>
 
